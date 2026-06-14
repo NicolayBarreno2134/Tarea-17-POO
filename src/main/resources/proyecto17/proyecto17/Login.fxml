@@ -3,23 +3,24 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" spacing="15" style="-fx-background-color: #C4FFD5; -fx-padding: 40;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="proyecto17.proyecto17.LoginController">
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="proyecto17.proyecto17.LoginController"
+      alignment="CENTER" spacing="15"
+      stylesheets="@styles.css">
 
-   <Label style="-fx-font-size: 26px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;" text="🛒MiTienda" />
-   <Label style="-fx-font-size: 14px; -fx-text-fill: #7f8c8d;" text="Sistema de Ventas" />
+   <Label text=" 🛒 MiTienda" styleClass="titulo"/>
+   <Label text="Sistema de Ventas"/>
 
-   <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #34495e;" text="Iniciar sesión" />
+   <Label text="Usuario"/>
+   <TextField fx:id="usuarioTextField" promptText="Ej: admin" styleClass="text-field"/>
 
-   <Label text="Usuario" />
-   <TextField fx:id="usuarioTextField" promptText="Ej: admin" />
+   <Label text="Contraseña"/>
+   <PasswordField fx:id="contraseñaTextField" promptText="Ingrese su contraseña" styleClass="password-field"/>
 
-   <Label text="Contraseña" />
-   <PasswordField fx:id="contraseñaTextField" promptText="Ingrese su contraseña" />
+   <Label text="Rol"/>
+   <ComboBox fx:id="rolComboBox" promptText="— Seleccionar —" styleClass="combo-box"/>
 
-   <Label text="Rol" />
-   <ComboBox fx:id="rolComboBox" promptText="— Seleccionar —" />
-
-   <Button onAction="#ingresar" style="-fx-background-color: #00AD33; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 160; -fx-pref-height: 36; -fx-background-radius: 6;" text="🚪 Ingresar" />
-
-   <Label fx:id="lblError" style="-fx-text-fill: red; -fx-font-size: 12px;" />
+   <Button text="🚪  Ingresar" onAction="#ingresar" styleClass="btn-primary"/>
+   <Label fx:id="lblError" style="-fx-text-fill: red; -fx-font-size: 12px;"/>
 </VBox>
+
