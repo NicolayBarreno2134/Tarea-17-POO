@@ -6,7 +6,7 @@ Incluye un menú lateral con diferentes módulos y un formulario completo para a
 
 ---
 
-## 📸 Captura del diseño
+##  Captura del diseño
 ![Dashboard](docs/dashboard.png)
 
 ---
